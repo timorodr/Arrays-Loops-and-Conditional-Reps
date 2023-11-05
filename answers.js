@@ -37,6 +37,7 @@ const porgee = ["Porgee", "Porg", 186, "Ahch-To"]
 const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
 
 plantee [2] = 5001;
+//accessing the array and remember that index start at 0 
 console.log(plantee)
 
 wolfy [3] = "Gotham City";
@@ -44,14 +45,18 @@ console.log(wolfy)
 
 dart[3] = "Upside Down & Hawkins";
 console.log(dart)
-
+// Maybe should use .push but that creates a seperate category seperated by a comma in array
 wolfy[0] = "Gameboy";
 console.log(wolfy)
 ////////////////////////////////
 // Yell at the Ninja Turtles
 ////////////////////////////////
+const tmnt = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"]
 
-
+for(let turtles of tmnt) {
+    console.log(turtles.toUpperCase())
+}
+// for of loop practice is making it easier to use
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
