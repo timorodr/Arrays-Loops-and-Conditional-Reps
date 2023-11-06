@@ -102,7 +102,22 @@ console.log(ffIndex)
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+whereIsWaldo.splice(1, 1)
+console.log(whereIsWaldo)
+// Multidimensional arrays are a bit odd to read at the moment however still able to remove Eggbert
+whereIsWaldo[1][2] = "No One";
+console.log(whereIsWaldo)
+
+let waldo = whereIsWaldo[2][1][1];
+console.log(waldo)
+// Counting multidimensional arrays is difficult. I tried to find waldo in the 3rd array but it comes back in terminal with
+// an error. So I began to decrease from 3 and in the 2nd array if finds waldo? I need more practice. I will get better.
+//let waldoIndex = whereIsWaldo[2].indexOf("Waldo")
+// .log(whereIsWaldo[2].)
 
 ////////////////////////////////
 //  Excited Kitten
