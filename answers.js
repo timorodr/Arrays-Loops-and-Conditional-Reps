@@ -60,7 +60,44 @@ for(let turtles of tmnt) {
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
 
+let index = favMovies.indexOf('Titanic')
+console.log(index)
+// create another variable to become the index of your specific element in the array. Log that variable. TYSM class reference page
+let sort = favMovies.sort()
+console.log(sort)
+// the .sort method arranged the array in alphabetical order in the terminal however the array in the variable is the same as before
+let pop = favMovies.pop()
+console.log(pop)
+
+let push = favMovies.push('Guardians of the Galaxy');
+console.log(push)
+
+let reverse = favMovies.reverse()
+console.log(reverse)
+
+let shift = favMovies.shift()
+console.log(shift)
+
+let unshift = favMovies.unshift('Guardians of the Galaxy')
+console.log(unshift)
+// unshift adds whatever element your heart desires to the start/beginning of the array
+let djangoIndex = favMovies.indexOf('Django Unchained')
+console.log(djangoIndex)
+
+favMovies.splice(15, 1, 'Avatar')
+console.log(favMovies)
+//Yes this permanently altered the array. It removed Django and replaced it with Avatar.
+let slice = favMovies.slice(0, 9)
+console.log(slice)
+// in this case I will round up and slice at the index of 9.
+// The slice method extracts a portion of the array we are requesting using which index we're asking to extract
+// The array now only shows the extracted array from slicing, the last half of the array.
+let ffIndex = favMovies.indexOf('Fast and Furious')
+console.log(ffIndex)
+// We still get the index of the element in the array even if it has been removed.
+// I dont believe we changed the variable as it is still the original array however we modified the contents in the array using various methods.
 
 ////////////////////////////////
 // Where is Waldo
