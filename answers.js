@@ -115,13 +115,30 @@ console.log(whereIsWaldo)
 let waldo = whereIsWaldo[2][1][1];
 console.log(waldo)
 // Counting multidimensional arrays is difficult. I tried to find waldo in the 3rd array but it comes back in terminal with
-// an error. So I began to decrease from 3 and in the 2nd array if finds waldo? I need more practice. I will get better.
+// an error. So I began to decrease from 3 and in the 2nd array it finds waldo? I need more practice. I will get better.
 //let waldoIndex = whereIsWaldo[2].indexOf("Waldo")
 // .log(whereIsWaldo[2].)
 
 ////////////////////////////////
 //  Excited Kitten
 ////////////////////////////////
+for (let i = 0; i <= 20; i++) {
+    console.log("Love me, pet me! HSSSSSS!")
+}
+
+const kittenArray = [ "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+for (let i = 0; i <= 20; i++) {
+   if (i % 2 === 0) {
+    console.log(kittenArray[Math.floor(Math.random() * 3)])
+   } else {
+    console.log("Love me, pet me! HSSSSSS!")
+   }
+    
+}
+
+
+
 
 
 ////////////////////////////////
