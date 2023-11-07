@@ -136,11 +136,17 @@ for (let i = 0; i <= 20; i++) {
    }
     
 }
-
-
-
-
-
+// Using modulus seems like a concept that is easier for me to grasp vs some others. It really helps when trying to find
+// a specific element pattern that doesnt change.
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+
+console.log(nums.sort())
+
+console.log(nums.length/2)
+console.log(nums[Math.floor(nums.length/2)])
+// There is no element in the array associated with the index of 25 since we start at 0 so console.log(nums[Math.floor(nums.length)])
+// returns undefined
