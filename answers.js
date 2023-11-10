@@ -93,7 +93,7 @@ let slice = favMovies.slice(0, 9)
 console.log(slice)
 // in this case I will round up and slice at the index of 9.
 // The slice method extracts a portion of the array we are requesting using which index we're asking to extract
-// The array now only shows the extracted array from slicing, the last half of the array.
+// The array now only shows the extracted array from slicing, the last half of the array. Although the full array still exists
 let ffIndex = favMovies.indexOf('Fast and Furious')
 console.log(ffIndex)
 // We still get the index of the element in the array even if it has been removed.
@@ -128,7 +128,7 @@ for (let i = 0; i <= 20; i++) {
 
 const kittenArray = [ "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
 
-for (let i = 0; i <= 20; i++) {
+for (let i = 1; i <= 20; i++) {
    if (i % 2 === 0) {
     console.log(kittenArray[Math.floor(Math.random() * 3)])
    } else {
@@ -137,7 +137,7 @@ for (let i = 0; i <= 20; i++) {
     
 }
 // Using modulus seems like a concept that is easier for me to grasp vs some others. It really helps when trying to find
-// a specific element pattern that doesnt change.
+// a specific pattern that doesnt change.
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
